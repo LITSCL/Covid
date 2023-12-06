@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrarPacienteActivity">
+
+    <include
+        layout="@layout/toolbar">
+    </include>
+
+    <EditText
+        android:id="@+id/ingresarRutPacienteEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/rut_del_pacienteEt">
+    </EditText>
+
+    <EditText
+        android:id="@+id/ingresarNombrePacienteEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombreEt">
+    </EditText>
+
+    <EditText
+        android:id="@+id/ingresarApellidoPacienteEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/apellidoEt">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/fechaBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fechaBtn"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp">
+        </Button>
+        <EditText
+            android:id="@+id/fechaEt"
+            android:enabled="false"
+            android:layout_weight="1"
+            android:textSize="35sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DuplicateIds">
+        </EditText>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/ingresarAreaDeTrabajoPacienteSpn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <Switch
+        android:id="@+id/ingresarPresentaSintomasCovidPacienteSw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sintomas_covidSw">
+    </Switch>
+
+    <EditText
+        android:id="@+id/ingresarTemperaturaPacienteEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/temperaturaEt">
+    </EditText>
+
+    <Switch
+        android:id="@+id/ingresarPresentaTosPacienteSw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tiene_tosEt">
+    </Switch>
+
+    <EditText
+        android:id="@+id/ingresarPresionAterialPacienteEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/presion_arterialEt">
+    </EditText>
+
+    <Button
+        android:id="@+id/registrarPacienteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/agregar_pacienteBtn">
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="nombreTv">Nombre</string>
+    <string name="passwordTv">Contraseña</string>
+    <string name="ingresarBtn">Ingresar</string>
+    <string name="rut_del_pacienteEt">Rut del paciente</string>
+    <string name="nombreEt">Nombre</string>
+    <string name="apellidoEt">Apellido</string>
+    <string name="fechaBtn">Fecha</string>
+    <string name="sintomas_covidSw">¿Sintomas Covid?</string>
+    <string name="temperaturaEt">Temperatura</string>
+    <string name="tiene_tosEt">¿Tiene Tos?</string>
+    <string name="presion_arterialEt">Presión Arterial</string>
+    <string name="agregar_pacienteBtn">AGREGAR PACIENTE</string>
+    <string name="datos_pacienteTv">Datos Paciente</string>
+</resources>
