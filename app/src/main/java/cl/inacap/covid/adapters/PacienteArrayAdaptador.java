@@ -24,7 +24,7 @@ public class PacienteArrayAdaptador extends ArrayAdapter<Paciente> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = this.activity.getLayoutInflater();
-        View fila = inflater.inflate(R.layout.pacientes_list,null,true);
+        View fila = inflater.inflate(R.layout.pacientes_list, null, true);
         TextView datosPacienteTv = fila.findViewById(R.id.datosPacienteTv);
         ImageView imagenCovidPacienteIv = fila.findViewById(R.id.imagenCovidPacienteIv);
         Paciente pacienteActual = pacientes.get(position);

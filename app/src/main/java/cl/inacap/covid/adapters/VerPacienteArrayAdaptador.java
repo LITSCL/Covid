@@ -23,7 +23,7 @@ public class VerPacienteArrayAdaptador extends ArrayAdapter<Paciente> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = this.activity.getLayoutInflater();
-        View fila = inflater.inflate(R.layout.ver_paciente_list,null,true);
+        View fila = inflater.inflate(R.layout.ver_paciente_list, null, true);
         TextView verRutPacienteTv = fila.findViewById(R.id.verRutPacienteTv);
         TextView verNombrePacienteTv = fila.findViewById(R.id.verNombrePacienteTv);
         TextView verApellidoPacienteTv = fila.findViewById(R.id.verApellidoPacienteTv);
@@ -40,7 +40,7 @@ public class VerPacienteArrayAdaptador extends ArrayAdapter<Paciente> {
         verApellidoPacienteTv.setText("Apellido: " + pacienteElegido.getApellido());
         verFechaExamenPacienteTv.setText("Fecha: " + pacienteElegido.getFechaExamen());
         if (pacienteElegido.isPresentaSintomasCovid() == true) {
-            verPresentaSintomasCovidPacienteTv.setText("Sintomas Covid: "+"true");
+            verPresentaSintomasCovidPacienteTv.setText("Sintomas Covid: " + "true");
         }
         else {
             verPresentaSintomasCovidPacienteTv.setText("Sintomas Covid: " + "false");

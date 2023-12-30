@@ -36,15 +36,15 @@ public class MainActivity extends AppCompatActivity {
                 String password = "";
                 if (rutVerificado.length() == 9) {
                     password = Character.toString(rutVerificado.charAt(3)) +
-                               Character.toString(rutVerificado.charAt(4)) +
-                               Character.toString(rutVerificado.charAt(5)) +
-                               Character.toString(rutVerificado.charAt(6));
+                        Character.toString(rutVerificado.charAt(4)) +
+                        Character.toString(rutVerificado.charAt(5)) +
+                        Character.toString(rutVerificado.charAt(6));
                 }
                 else {
                     password = Character.toString(rutVerificado.charAt(4)) +
-                               Character.toString(rutVerificado.charAt(5)) +
-                               Character.toString(rutVerificado.charAt(6)) +
-                               Character.toString(rutVerificado.charAt(7));
+                        Character.toString(rutVerificado.charAt(5)) +
+                        Character.toString(rutVerificado.charAt(6)) +
+                        Character.toString(rutVerificado.charAt(7));
                 }
                 if (claveUsuarioEt.getText().toString().trim().equals(password)) {
                     startActivity(new Intent(MainActivity.this, PrincipalActivity.class));
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else {
-            //Aca se debe cambiar el color de borde del EditText Nombre...
+            //Aca se debe cambiar el color de borde del EditText Nombre.
             Toast.makeText(this, "Debe ingresar el nombre de usuario", Toast.LENGTH_SHORT).show();
             nombreUsuarioEt.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.SRC_ATOP);
         }

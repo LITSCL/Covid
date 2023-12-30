@@ -142,6 +142,7 @@ public class RegistrarPacienteActivity extends AppCompatActivity implements View
                             errores.add("Fecha no válida");
                         }
                     } catch (ParseException ex) {
+
                     }
                 }
 
@@ -227,10 +228,10 @@ public class RegistrarPacienteActivity extends AppCompatActivity implements View
         }
         AlertDialog.Builder alertBuilder = new AlertDialog.Builder(RegistrarPacienteActivity.this); //En el argumento se establece que Activity mostrará el mensaje.
         alertBuilder
-                .setTitle("Error de validación") //Define el titulo.
-                .setMessage(mensaje) //Define el mensaje del dialogo.
-                .setPositiveButton("Aceptar", null) //Agrega el botón aceptar.
-                .create() //Crea el Alert.
-                .show(); //Se muestra el Alert.
+            .setTitle("Error de validación") //Define el titulo.
+            .setMessage(mensaje) //Define el mensaje del dialogo.
+            .setPositiveButton("Aceptar", null) //Agrega el botón aceptar.
+            .create() //Crea el Alert.
+            .show(); //Se muestra el Alert.
     }
 }
